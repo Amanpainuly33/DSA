@@ -346,6 +346,52 @@ snode *deleteatnthpos(snode *head)
     return head;
 }
 
+snode *deleteatnthposfromlast(snode *head)
+{
+    if (head == NULL)
+        printf("List is empty!");
+    else if (head->next == NULL)
+    {
+        snode *p1 = head;
+        head = NULL;
+        free(p1);
+    }
+    else
+    {
+
+        int m = 0, c = 1, n;
+        snode *p1 = head, *p2;
+        while (p1 != NULL)
+        {
+            p1 = p1->next;
+            m++;
+        }
+        printf("Enter the position you want to be deleted from last :");
+        scanf("%d", &n);
+        p1 = head;
+        while (c < (m - n))
+        {
+            p1 = p1->next;
+            c++;
+        }
+        p2 = p1->next;
+        p1->next = p2->next;
+        free(p2);
+    }
+    return head;
+}
+
+void displayreverse(snode* head){
+
+    if(head ==NULL)
+        return;
+    if(head ->next!=NULL)
+        displayreverse(head->next);
+
+    printf("%d ",head->info);
+    
+}
+
 void display(snode *head)
 {
     snode *p1 = head;
@@ -364,7 +410,7 @@ int main()
     snode *head = NULL;
     do
     {
-        printf("Enter your choice :");
+        printf("\nEnter your choice :");
         scanf("%d", &choice);
         switch (choice)
         {
@@ -402,11 +448,26 @@ int main()
         case 11:
             head = deleteatnthpos(head);
             break;
-            // case 12:
-            //     head = deleteatnthposfromlast(head);
-            //     break;
-
+        case 12:
+            head = deleteatnthposfromlast(head);
+            break;
+            
         case 13:
+            displayreverse(head);
+            break;
+        // case 14:
+        //     head = reverse(head);
+        //     break;
+        // case 15:
+        //     head = rotate(head);
+        //     break;
+        // case 16:
+        //     head = push(head);
+        //     break;
+        // case 17:
+        //     head = pop(head);
+        //     break;
+        case 18:
             display(head);
             break;
 

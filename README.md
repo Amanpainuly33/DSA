@@ -7,8 +7,6 @@ This repository contains solutions and implementations of various **Data Structu
 - [About](#about)
 - [Prerequisites](#prerequisites)
 - [How to Use](#how-to-use)
-- [Directory Structure](#directory-structure)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## About

@@ -30,24 +30,6 @@ To use this repository, you need:
    ```bash
    git clone https://github.com/Amanpainuly33/DSA.git
 
-## Directory Structure
-
-DSA/
-├── Sorting/
-│   ├── bubble_sort.c
-│   ├── quick_sort.c
-│   └── merge_sort.c
-├── Searching/
-│   ├── binary_search.c
-│   └── linear_search.c
-├── LinkedList/
-│   ├── singly_linked_list.c
-│   └── doubly_linked_list.c
-├── Stack/
-│   ├── stack_array.c
-│   └── stack_linked_list.c
-└── README.md
-
 ## License
 
 This structure ensures clarity and organization, making it user-friendly for contributors and users alike. If you want to customize the content further, let me know! You can also refer to the repository [here](https://github.com/Amanpainuly33/DSA).
